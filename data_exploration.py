@@ -6,7 +6,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 
-data = pd.read_csv('weatherAUS.csv')
+
+df = pd.read_csv('weatherAUS.csv')
 
 """
 Dropping rows which target values are missing.
@@ -16,8 +17,12 @@ After drop: 140,787  instances
 Total loss: 4,573 instances - 3.15% of dataset
 """
 
-data.dropna(subset = data.columns[-1], inplace = True)
-data.dropna(subset = data.columns[-2], inplace = True)
+print(df)
+
+df.dropna(subset = df.columns[-1], inplace = True)
+df.dropna(subset = df.columns[-2], inplace = True)
+
+print(df)
 
 
 
@@ -26,11 +31,11 @@ Encoding 'Yes' and 'No' values with 1.0 and 0.0 for the sake of regression model
 As it seems only 'RainToday' and 'RainTomorrow' has replaced here.
 """
 
-data['RainToday'] = data['RainToday'].map({'Yes': 1, 'No': 0}).astype(float)
-data['RainTomorrow'] = data['RainTomorrow'].map({'Yes': 1, 'No': 0}).astype(float)
+df['RainToday'] = df['RainToday'].map({'Yes': 1, 'No': 0}).astype(float)
+df['RainTomorrow'] = df['RainTomorrow'].map({'Yes': 1, 'No': 0}).astype(float)
 
 
-Xs, Ys = data.drop(data.columns[-1], axis = 1), data[data.columns[-1]]
+Xs, Ys = df.drop(df.columns[-1], axis = 1), df[df.columns[-1]]
 
 Ys_small_test = Ys.iloc[: int((0.2 * len(Ys)))]
 
