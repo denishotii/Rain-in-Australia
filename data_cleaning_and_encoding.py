@@ -60,4 +60,4 @@ We do not overwrite for versioning purposes.
 
 updated_filepath = 'weatherAUS_cleaned_encoded.csv'
 
-data.to_csv(updated_filepath, index = False)
+#data.to_csv(updated_filepath, index = False)

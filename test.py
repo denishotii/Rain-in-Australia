@@ -32,6 +32,6 @@ print(grid_search.score(pd.DataFrame(X_test), Y_test))
 
 import pandas as pd
 
-data = pd.read_csv('weatherAUS_missing_continous_values_inputed.csv')
+data = pd.read_csv('weatherAUS_missing_values_inputed.csv')
 
 print(data.info())
