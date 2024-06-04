@@ -41,7 +41,7 @@ wind_dir_9am_counts = data['WindDir9am'].value_counts(normalize = True)
 data['WindDir9am'] = data['WindDir9am'].map(wind_dir_9am_counts)
 
 wind_dir_3pm_counts = data['WindDir3pm'].value_counts(normalize = True)
-data['WindDir9am'] = data['WindDir3pm'].map(wind_dir_3pm_counts)
+data['WindDir3pm'] = data['WindDir3pm'].map(wind_dir_3pm_counts)
 
 new_names = {'Location': 'City_Frequency',
              'WindGustDir': 'WindGustDir_Frequency',
@@ -60,4 +60,4 @@ We do not overwrite for versioning purposes.
 
 updated_filepath = 'weatherAUS_cleaned_encoded.csv'
 
-data.to_csv(updated_filepath, index = False)
+#data.to_csv(updated_filepath, index = False)
