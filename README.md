@@ -1,5 +1,7 @@
 # Rain in Australia - Hands on Machine Learning Class Project
 
+![Summer Gala Night at KU - Project Banner](./KU_Summer_gala_Rain_in_Australia.png)
+
 In my second semester, in the Data Science course at the [Catholic University of Eichstaett-Ingolstadt](https://www.ku.de/studienangebot/data-science), we had the class "Hands-on Machine Learning and Data Science", me and my university colleague, Ali Guliyev were assigned to work on this Machine Learning project as our Final Project.
 
 The project we had to work on is [Rain in Australia](https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package), the main goal on our project was for us to practice on a real project, to use what we learned during the lectures in the project, and to have a better understanding of Machine Learning with Python.
@@ -28,4 +30,22 @@ The project had to be submitted in Milestones, so thats why you will find in thi
 
 We have successfully completed the project and meet all the deadlines for the project submission. Except these we are very happy that we could create a well written code and documented. We were able to use and understand a lot of aspects of Machine Learning, even include in our project very advanced Machine Learning techniques.
 
-We have been able to understand the dataset we had to work with, to analyze the dataset. After this to continue with Data Cleaning aspects, which is very important.
+We have been able to understand the dataset we had to work with, to analyze the dataset. After this to continue with Data Cleaning aspects, which is very important. We also took care of the outliers in our dataset.
+
+After understanding the dataset, we have continued with exploring different models, that we can inclide in out dataset to get a better results.
+
+We have tested many different models, but at the end we only included 5 (KNN Classification, Logistic Regression, RandomForest, XGBoost, Neural Network Model) in our notebook. Then after checking the results, the ones that had the best evaluation were RandomForest, XGBoost, and Neural Network.
+
+Also, we included Voting Classifier - Ensemble Method, which would take these last three models, and evaluate and get the best result out of them.
+
+## Project Presentation
+As part of our work, we also had at the end of semester present our project in front of the professors and university colleagues. The presentation we worked and presented, can be found in this Repository.
+
+## Contributors
+
+- [**Denis Hoti**](https://denishoti.dev)
+- [**Ali Guliyev**](#)
+
+We would like to specially thank our Hand-On Machine Learning professors, for supervising us:
+- **Prof. Felix Voigtlaender**
+- **Paul Geuchen**
